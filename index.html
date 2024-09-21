@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+ 
+ 
+    <!-- Registro club -->
+ 
     <p>Registrarse en el club</p>
-
-    
 
 
     <form autofocus>
@@ -68,7 +70,7 @@
 
 
 
-
+<!-- Registro Bicicletas -->
 
     <form>
     <fieldset>
@@ -89,9 +91,26 @@
 
         <label for="biketype">Tipo de bicicleta:</label>
         <select id="biketype" name="biketype">
-            <option value="Urbana">Urbana</option>
-            <option value="Montaña">Montaña</option>
-            <option value="Carretera">Carretera</option>
+
+            <optgroup label="Urbana">
+                <option value="clasica">Bicicleta Clásica</option>
+                <option value="plegable">Bicicleta Plegable</option>
+                <option value="electrica">Bicicleta Eléctrica</option>
+                <option value="commuter">Bicicleta Commuter</option>
+            </optgroup>
+
+            <optgroup label="Montaña"></optgroup>
+                <option value="sport">Bicicletas de tipo Sport</option>
+                <option value="trail">Bicicletas de tipo Trail o Hard Tail</option>
+                <option value="xc">Bicicletas para XC o Cross Country</option>
+            </optgroup>
+
+            <optgroup label="Carreras"></optgroup>
+                <option value="fondo">Bicicletas Gran Fondo</option>
+                <option value="racing">Bicicletas Racing</option>
+                <option value="electrica">Bicicleta Eléctrica</option>
+                <option value="aero">Bicicletas Aero</option>
+            </optgroup>
         </select>
 
         <label for="accessories">Accesorios:</label>
